@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover stunning landscapes, including serene forests, breathtaking mountains, and relaxing waters. Embark on an unforgettable journey with nature."
+    />
+    <title>Discover Nature: Explore Forests, Mountains, and Waters</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./images/mountains.jpg" type="image/png" />
+  </head>
+  <body>
+    <div class="main-section">
+      <!--  Hero Section: Introduction to Nature -->
+      <div class="hero-section nature-img" role="banner">
+        <h1 class="hero-title">Discover Nature</h1>
+        <div class="hero-more-section">
+          <p class="hero-description">
+            Embark on a journey to explore the world's most stunning
+            landscapes.From serene forests to majestic mountains,reconnect with
+            the beauty of the earth.
+          </p>
+          <!-- Learn more button to scroll to cards section -->
+          <button
+            class="hero-button"
+            onclick="scrollToCards()"
+            aria-label="Learn more about nature destinations"
+          >
+            Learn More
+            <span class="down-arrow">&#8595;</span>
+            <!-- Arrow icon -->
+          </button>
+        </div>
+      </div>
+      <!-- responsive cards section below the hero section showcasing features or products -->
+      <div id="cards-content" class="cards-section" role="region">
+        <!-- Forest section -->
+        <div class="each-card" role="article">
+          <img
+            src="./images/forest.jpg"
+            alt="A lush green forest with sunlight streaming through the trees"
+            class="card-img"
+          />
+          <h2 class="card-title">Explore Forests</h2>
+          <p class="card-description">
+            Discover the beauty of lush green forests.
+          </p>
+        </div>
+        <!-- Mountains section -->
+        <div class="each-card" role="article">
+          <img
+            src="./images/mountains.jpg"
+            alt="A climber scaling the dark rocky surface of a mountain"
+            class="card-img"
+          />
+          <h2 class="card-title">Climb Mountains</h2>
+          <p class="card-description">Conquer breathtaking peaks and trails.</p>
+        </div>
+        <!-- Waters section -->
+        <div class="each-card" role="article">
+          <img
+            src="./images/waters.jpg"
+            alt="A peaceful sea waters for relax"
+            class="card-img"
+          />
+          <h2 class="card-title">Relax by Waters</h2>
+          <p class="card-description">Unwind near serene lakes and rivers</p>
+        </div>
+      </div>
+      <!-- Footer section: Copyright Information -->
+      <div class="footer-section" role="contentinfo">
+        <p class="footer-text">© 2025 DiscoverNature. All Rights Reserved.</p>
+      </div>
+
+      <button
+        class="page-up-button"
+        onclick="scrollToTop()"
+        aria-label="Scroll to top"
+      >
+        &#8593;
+        <!-- Up arrow icon -->
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
